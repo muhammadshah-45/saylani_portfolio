@@ -516,35 +516,42 @@ width: 100%;
 #contact .contact-item:hover{
     box-shadow:  0 0 5px 0 #0000002c;
 }
-#footer {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+/* footer */
+#footer{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);   
 }
-#footer .footer {
+#footer .footer{
     min-height: 200px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
 }
 #footer h2{
-    color: white;
     font-weight: 500;
-    letter-spacing: .1rem;
     font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 #footer .social-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+display: flex;
+margin-bottom: 30px;
 }
 #footer .social-item{
-    height: 50px;
-    width: 50px;
-    margin: 0 5px;
+height: 50px;
+width: 50px;
+margin: 0 5px;
+}
+#footer p{
+    font-size: 1.3rem;
+    color: #fff;
 }
 #footer .social-item img{
-    filter: grayscale(50%);
+    filter: grayscale(1);
+    transition: 0.3s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
 }

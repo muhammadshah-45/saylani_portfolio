@@ -26,12 +26,24 @@
         width: 100%;
     }
     #about .about{
-        flex-direction: row;
+        /* flex-direction: row; */
     }
     #about .col-left{
         width: 600px;
         height: 400px;
         padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left: 40px;
+        /* right: 40px; */
+        top: 34px;
+        height: 93%;
+        width: 70%;
+        border: 10px solid orangered;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
     }
 }
 @media screen and (min-width:1200px) {

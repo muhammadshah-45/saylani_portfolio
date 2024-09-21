@@ -10,6 +10,29 @@
     .hero h1{
         font-size: 7rem;
     }
+    #projects .project-item{
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .project-item{
+        height: 300px;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    #projects .all-projects .project-img{
+        width: 100%;
+    }
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
 }
 @media screen and (min-width:1200px) {
     #header .hamburger{

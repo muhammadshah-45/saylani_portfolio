@@ -336,9 +336,9 @@ p{
 .box:hover {  
     transform: scale(1.05);  
 }  
-img{
+/* img{
     width: 50px;
-}
+} */
 
 h2 {  
     margin-bottom: 10px;  
@@ -432,4 +432,63 @@ p {
    height: 100%;
    word-wrap: 100%;
    background-image: linear-gradient(60deg,#29323c 0%, #485548 100%);
+}
+#projects .project-img img {
+    transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+    transform: scale(1.1);
+}
+
+/* About Style Section */
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    color: black;
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+.about-img img{
+    margin-top: 10px;
+    width: 250px;
+}
+#about .col-right{
+    width: 100%;
+}
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    color: black;
+    margin-bottom: 20px;
+}
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+#about .col-left .about-img::after{
+    content: "";
+    position: absolute;
+    border: 7px solid orangered;
+    top: 19px;
+    left: -33px;
+    height: 98%;
+    width: 98%;
+    z-index: -1;
 }
